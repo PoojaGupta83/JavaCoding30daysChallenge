@@ -1,15 +1,15 @@
-/*5.	Check if a number is even or odd using recursion*/
-
+import java.util.Scanner;
 class EvenOdd{
-public static void main(String h[]){
-int num=17;
-String result=num>=0?checkEvenOdd(num):checkEvenOdd(-num);
-System.out.println("Result is="+result);
-}
-
-static String  checkEvenOdd(int n){
-if(n==0) return "Even";
-if(n==1) return "Odd";
-return checkEvenOdd(n-2);
+public static void main(String d[]){
+int n=0;
+System.out.println("Enter a number");
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+if(n%2==0)
+System.out.println("Number is Even");
+else if(n%2!=0)
+System.out.println("Number is Odd");
+else
+System.out.println("Anonymous Number");
 }
 }
